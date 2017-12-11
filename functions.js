@@ -200,13 +200,19 @@ function maximum(x, y){
  	}
  }
 
-
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
 
+function isOdd(n){
+	if (n % 2 === 1 || n % 2 === -1){
+		return true;
+	}else{
+		return false;
+	}
+}
 
 /**
  * Returns a letter grade.

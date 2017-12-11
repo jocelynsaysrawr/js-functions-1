@@ -226,6 +226,19 @@ function isOdd(n){
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade(score, total){
+	if (score / total >= 0 && score / total < 0.6){
+		return "F";
+	}else if (score / total >= 0.6 && score / total < 0.7){
+		return "D";
+	}else if (score / total >= 0.7 && score / total < 0.8){
+		return "C";
+	}else if (score / total >= 0.8 && score / total < 0.9){
+		return "B";
+	}else if (score / total >= 0.9 && score / total <= 1){
+		return "A";
+	}
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -234,7 +247,7 @@ function isOdd(n){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-
+ 
 
 /**
  * Joins two strings with a space.

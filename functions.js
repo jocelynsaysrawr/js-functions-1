@@ -46,6 +46,9 @@ function add(x, y){
  * @return {number} the difference
  */
 
+function subtract(x, y){
+	return x - y;
+}
 
 /**
  * Multiplies two numbers.

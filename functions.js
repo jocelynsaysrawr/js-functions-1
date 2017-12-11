@@ -28,7 +28,6 @@ function increase(n){
  	return n -= 1;
  }
 
-
 /**
  * Adds two numbers.
  * @param {number} x
@@ -36,6 +35,9 @@ function increase(n){
  * @return {number} the sum
  */
 
+function add(x, y){
+	return x + y;
+}
 
 /**
  * Subtracts the second number from the first.

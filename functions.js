@@ -247,7 +247,16 @@ function letterGrade(score, total){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
- 
+
+ function incrementReviews(restaurant){
+ 	if (restaurant.reviews >= 1){
+ 		restaurant.reviews += 1;
+ 	}else if (restaurant.reviews == undefined){
+ 		restaurant.reviews = 1;
+ 	}
+ 	return restaurant;
+ }
+
 
 /**
  * Joins two strings with a space.
